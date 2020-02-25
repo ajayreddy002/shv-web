@@ -407,6 +407,120 @@
       line-height: 1.9;
     }
   }
+
+  //   Teams Styles
+  .single-team {
+    background: #ffffff;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-bottom: 30px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    z-index: 1;
+    text-align: center;
+
+    &:hover {
+      -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+      box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+      .team-info {
+          border-radius: 5px;
+      }
+    }
+
+    .team-image {
+      position: relative;
+      z-index: 1;
+      padding-left: 35px;
+      padding-right: 35px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        background: #f9f6f6;
+        height: 10px;
+        width: 100%;
+        z-index: -1;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+      }
+
+      img {
+        border: 3px solid #cdf1d8;
+        width: auto !important;
+        border-radius: 50%;
+        display: inline-block !important;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        max-height: 125px;
+      }
+    }
+
+    .team-content {
+      padding-left: 35px;
+      padding-right: 35px;
+
+      p {
+        margin-top: 20px;
+        margin-bottom: 0;
+      }
+    }
+
+    .team-info {
+      background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%);
+      padding: 10px 15px;
+      border-radius: 75px;
+      margin-bottom: 25px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 25px;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+
+      h3 {
+        font-size: 18px;
+        margin-bottom: 5px;
+        color: #ffffff;
+      }
+
+      span {
+        color: #ffffff;
+        font-size: 13px;
+      }
+
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+
+      li {
+        display: inline-block;
+        margin: 0 3px;
+
+        a {
+          color: #c679e3;
+          display: inline-block;
+          -webkit-transition: 0.5s;
+          transition: 0.5s;
+          text-decoration: none;
+          outline: 0 !important;
+
+          &:hover {
+            -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+            color: #44ce6f;
+          }
+
+          svg {
+            width: 19px;
+          }
+        }
+      }
+    }
+  }
 }
 
 .services-content .box:hover::before {
@@ -512,7 +626,7 @@
     padding-top: 150px;
     padding-bottom: 80px;
     background-position: center;
-    
+
 
 
     .hero-content {
@@ -547,11 +661,12 @@
     h3 {
       font-size: 17px !important;
     }
+
     .icon {
-        position: relative;
-        left: 0;
-        top: 0;
-        margin-bottom: 25px;
+      position: relative;
+      left: 0;
+      top: 0;
+      margin-bottom: 25px;
     }
   }
 }
