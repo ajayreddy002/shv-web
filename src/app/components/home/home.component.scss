@@ -241,6 +241,9 @@
       }
 
       &:hover {
+        svg {
+          color: #ffffff;
+        }
         color: #ffffff;
         -webkit-transform: translateY(-10px);
         transform: translateY(-10px);

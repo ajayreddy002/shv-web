@@ -124,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "shv-web"
+    }
+  },
+  "defaultProject": "shv-web",
+  "cli": {
+    "analytics": "e08ebfac-2f92-4e6a-acdf-c18880221f53"
+  }
 }
